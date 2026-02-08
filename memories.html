@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <p><b>HAPPY VALENTINE'S DAY, BABYYLOVEE!!!💗</b></p> 
+        
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="message.html">Read this, Baby</a>
+            <a href="memories.html">Memories</a>
+        </nav>
+    </header>
+
+    <div class="background-decorations">
+        <img src="images/happy-valentines-day-elements-2014-butterflies-valentines-day-11563615248lleh50jnsm.png" class="deco-heart-1">
+        <img src="images/cute-pastel-pink-hand-drawn-doodle-heart-icon-free-png.webp" class="deco-heart-2">
+        <img src="images/pink-cupid-shooting-hand-drawn-png.webp" class="deco-cupid">
+        <img src="images/line-pattern-pink-heart-flat-design-for-decoration-love-valentine-wedding-card-design-free-png.webp" class="deco-heart-3">
+    </div>
+    </div>
+
+    <div class="carousel-container">
+        <h2 class="carousel-title" style="font-family: Tangerine; font-weight: 700  ;">Our Memories💗💗💗</h2>
+        
+        <div class="carousel">
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+            
+            <div class="carousel-container">
+    <h2 class="carousel-title">Our Beautiful Memories 💕</h2>
+    
+    <div class="carousel">
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+        
+        <div class="carousel-images">
+            <img src="images/photo1.jpg" class="carousel-slide active" alt="Memory 1">
+            <img src="images/photo2.jpg" class="carousel-slide" alt="Memory 2">
+            <img src="images/photo3.jpg" class="carousel-slide" alt="Memory 3">
+            <img src="images/photo4.jpg" class="carousel-slide" alt="Memory 4">
+            <img src="images/photo5.jpg" class="carousel-slide" alt="Memory 5">
+            <img src="images/photo6.jpg" class="carousel-slide" alt="Memory 6">
+            <img src="images/photo7.jpg" class="carousel-slide" alt="Memory 7">
+            <img src="images/photo8.jpg" class="carousel-slide" alt="Memory 8">
+            <img src="images/photo9.jpg" class="carousel-slide" alt="Memory 9">
+            <img src="images/photo10.jpg" class="carousel-slide" alt="Memory 10">
+            <img src="images/photo11.jpg" class="carousel-slide" alt="Memory 11">
+            <img src="images/photo12.jpg" class="carousel-slide" alt="Memory 12">
+            <img src="images/photo13.jpg" class="carousel-slide" alt="Memory 13">
+            <img src="images/photo14.jpg" class="carousel-slide" alt="Memory 14">
+            <img src="images/photo15.jpg" class="carousel-slide" alt="Memory 15">
+            <img src="images/photo16.jpg" class="carousel-slide" alt="Memory 16">
+            <img src="images/photo17.jpg" class="carousel-slide" alt="Memory 17">
+            <img src="images/photo18.jpg" class="carousel-slide" alt="Memory 18">
+            <img src="images/photo19.jpg" class="carousel-slide" alt="Memory 19">
+            <img src="images/photo20.jpg" class="carousel-slide" alt="Memory 20">
+            <img src="images/photo21.jpg" class="carousel-slide" alt="Memory 21">
+            <img src="images/photo22.jpg" class="carousel-slide" alt="Memory 22">
+            <img src="images/photo23.jpg" class="carousel-slide" alt="Memory 23">
+            <img src="images/photo24.jpg" class="carousel-slide" alt="Memory 24">
+            <img src="images/photo25.jpg" class="carousel-slide" alt="Memory 25">
+        </div>
+        
+        <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+    </div>
+    
+    <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+        <span class="dot" onclick="currentSlide(13)"></span>
+        <span class="dot" onclick="currentSlide(14)"></span>
+        <span class="dot" onclick="currentSlide(15)"></span>
+        <span class="dot" onclick="currentSlide(16)"></span>
+        <span class="dot" onclick="currentSlide(17)"></span>
+        <span class="dot" onclick="currentSlide(18)"></span>
+        <span class="dot" onclick="currentSlide(19)"></span>
+        <span class="dot" onclick="currentSlide(20)"></span>
+        <span class="dot" onclick="currentSlide(21)"></span>
+        <span class="dot" onclick="currentSlide(22)"></span>
+        <span class="dot" onclick="currentSlide(23)"></span>
+        <span class="dot" onclick="currentSlide(24)"></span>
+    </div>
+</div>
+
+
+    <script>
+        let currentIndex = 0;
+        let autoPlayInterval;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            
+            if (index >= slides.length) currentIndex = 0;
+            else if (index < 0) currentIndex = slides.length - 1;
+            else currentIndex = index;
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[currentIndex].classList.add('active');
+            dots[currentIndex].classList.add('active');
+        }
+
+        function moveSlide(direction) {
+            showSlide(currentIndex + direction);
+            resetAutoPlay();
+        }
+
+        function currentSlide(index) {
+            showSlide(index);
+            resetAutoPlay();
+        }
+    
+        function autoPlay() {
+            currentIndex++;
+            if (currentIndex >= slides.length) {
+                currentIndex = 0;
+            }
+            showSlide(currentIndex);
+        }
+
+        function resetAutoPlay() {
+            clearInterval(autoPlayInterval);
+            autoPlayInterval = setInterval(autoPlay, 3000);
+        }
+
+        autoPlayInterval = setInterval(autoPlay, 3000);
+    </script>
+
+</body>
+</html>
