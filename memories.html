@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Precious Memories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <p style="font-family: Tangerine; font-size: 30px;"> 
+            Lorenzo💗Zenjie
+        </p> 
+        
+        <nav>
+            <a href="homePage.html">Home</a>
+            <a href="message.html">Read this, Baby</a>
+            <a href="reveal.html">Things I Love</a>
+            <a href="memories.html">Memories</a>
+        </nav>
+    </header>
+
+    <div class="background-decorations">
+        <img src="images/happy-valentines-day-elements-2014-butterflies-valentines-day-11563615248lleh50jnsm.png" class="deco-heart-1">
+        <img src="images/cute-pastel-pink-hand-drawn-doodle-heart-icon-free-png.webp" class="deco-heart-2">
+        <img src="images/pink-cupid-shooting-hand-drawn-png.webp" class="deco-cupid">
+        <img src="images/line-pattern-pink-heart-flat-design-for-decoration-love-valentine-wedding-card-design-free-png.webp" class="deco-heart-3">
+    </div>
+
+    <div class="memories-header">
+        <h1 class="memories-main-title">📷 Our Precious Memories ✨</h1>
+    </div>
+
+    <div class="memories-container">
+        <div class="memory-counter">
+            ⭐ Memory <span id="currentMemory">1</span> of <span id="totalMemories">25</span> ⭐
+        </div>
+
+        <div class="polaroid-wrapper">
+            <button class="nav-btn prev-btn" onclick="moveSlide(-1)">‹</button>
+            
+            <div class="polaroid-card">
+                <div class="tape tape-top"></div>
+                
+                <div class="polaroid-photo">
+                    <img src="images/photo1.jpg" class="memory-slide active" alt="Memory 1">
+                    <img src="images/photo2.jpg" class="memory-slide" alt="Memory 2">
+                    <img src="images/photo3.jpg" class="memory-slide" alt="Memory 3">
+                    <img src="images/photo4.jpg" class="memory-slide" alt="Memory 4">
+                    <img src="images/photo5.jpg" class="memory-slide" alt="Memory 5">
+                    <img src="images/photo6.jpg" class="memory-slide" alt="Memory 6">
+                    <img src="images/photo7.jpg" class="memory-slide" alt="Memory 7">
+                    <img src="images/photo8.jpg" class="memory-slide" alt="Memory 8">
+                    <img src="images/photo9.jpg" class="memory-slide" alt="Memory 9">
+                    <img src="images/photo10.jpg" class="memory-slide" alt="Memory 10">
+                    <img src="images/photo11.jpg" class="memory-slide" alt="Memory 11">
+                    <img src="images/photo12.jpg" class="memory-slide" alt="Memory 12">
+                    <img src="images/photo13.jpg" class="memory-slide" alt="Memory 13">
+                    <img src="images/photo14.jpg" class="memory-slide" alt="Memory 14">
+                    <img src="images/photo15.jpg" class="memory-slide" alt="Memory 15">
+                    <img src="images/photo16.jpg" class="memory-slide" alt="Memory 16">
+                    <img src="images/photo17.jpg" class="memory-slide" alt="Memory 17">
+                    <img src="images/photo18.jpg" class="memory-slide" alt="Memory 18">
+                    <img src="images/photo19.jpg" class="memory-slide" alt="Memory 19">
+                    <img src="images/photo20.jpg" class="memory-slide" alt="Memory 20">
+                    <img src="images/photo21.jpg" class="memory-slide" alt="Memory 21">
+                    <img src="images/photo22.jpg" class="memory-slide" alt="Memory 22">
+                    <img src="images/photo23.jpg" class="memory-slide" alt="Memory 23">
+                    <img src="images/photo24.jpg" class="memory-slide" alt="Memory 24">
+                    <img src="images/photo25.jpg" class="memory-slide" alt="Memory 25">
+                    <img src="images/photo26.jpg" class="memory-slide" alt="Memory 26">
+                    <img src="images/photo27.jpg" class="memory-slide" alt="Memory 27">
+                    <img src="images/photo28.jpg" class="memory-slide" alt="Memory 28">
+                    <img src="images/photo29.jpg" class="memory-slide" alt="Memory 29">
+                    <img src="images/photo30.jpg" class="memory-slide" alt="Memory 30">
+                    <img src="images/photo31.jpg" class="memory-slide" alt="Memory 31">
+                    <img src="images/photo32.jpg" class="memory-slide" alt="Memory 32">
+                    <img src="images/photo33.jpg" class="memory-slide" alt="Memory 33">
+                    <img src="images/photo34.jpg" class="memory-slide" alt="Memory 34">
+                    <img src="images/photo35.jpg" class="memory-slide" alt="Memory 35">
+                </div>
+                <div class="polaroid-caption">
+                    <p class="caption-text" id="captionText">Saurrr Cutieee💗💗💗</p>
+                    <div class="hearts-decoration">💗 💗 💗</div>
+                </div>
+
+                <div class="tape tape-bottom"></div>
+            </div>
+            
+            <button class="nav-btn next-btn" onclick="moveSlide(1)">›</button>
+        </div>
+
+        <div class="dots-container">
+            <span class="memory-dot active" onclick="currentSlide(0)"></span>
+            <span class="memory-dot" onclick="currentSlide(1)"></span>
+            <span class="memory-dot" onclick="currentSlide(2)"></span>
+            <span class="memory-dot" onclick="currentSlide(3)"></span>
+            <span class="memory-dot" onclick="currentSlide(4)"></span>
+            <span class="memory-dot" onclick="currentSlide(5)"></span>
+            <span class="memory-dot" onclick="currentSlide(6)"></span>
+            <span class="memory-dot" onclick="currentSlide(7)"></span>
+            <span class="memory-dot" onclick="currentSlide(8)"></span>
+            <span class="memory-dot" onclick="currentSlide(9)"></span>
+            <span class="memory-dot" onclick="currentSlide(10)"></span>
+            <span class="memory-dot" onclick="currentSlide(11)"></span>
+            <span class="memory-dot" onclick="currentSlide(12)"></span>
+            <span class="memory-dot" onclick="currentSlide(13)"></span>
+            <span class="memory-dot" onclick="currentSlide(14)"></span>
+            <span class="memory-dot" onclick="currentSlide(15)"></span>
+            <span class="memory-dot" onclick="currentSlide(16)"></span>
+            <span class="memory-dot" onclick="currentSlide(17)"></span>
+            <span class="memory-dot" onclick="currentSlide(18)"></span>
+            <span class="memory-dot" onclick="currentSlide(19)"></span>
+            <span class="memory-dot" onclick="currentSlide(20)"></span>
+            <span class="memory-dot" onclick="currentSlide(21)"></span>
+            <span class="memory-dot" onclick="currentSlide(22)"></span>
+            <span class="memory-dot" onclick="currentSlide(23)"></span>
+            <span class="memory-dot" onclick="currentSlide(24)"></span>
+            <span class="memory-dot" onclick="currentSlide(25)"></span>
+            <span class="memory-dot" onclick="currentSlide(26)"></span>
+            <span class="memory-dot" onclick="currentSlide(27)"></span>
+            <span class="memory-dot" onclick="currentSlide(28)"></span>
+            <span class="memory-dot" onclick="currentSlide(29)"></span>
+            <span class="memory-dot" onclick="currentSlide(30)"></span>
+            <span class="memory-dot" onclick="currentSlide(31)"></span>
+            <span class="memory-dot" onclick="currentSlide(32)"></span>
+            <span class="memory-dot" onclick="currentSlide(33)"></span>
+            <span class="memory-dot" onclick="currentSlide(34)"></span>
+        </div>
+    </div>
+
+    <div class="heart-particles"></div>
+
+    <script>
+        let currentIndex = 0;
+        let autoPlayInterval;
+        const slides = document.querySelectorAll('.memory-slide');
+        const dots = document.querySelectorAll('.memory-dot');
+        
+        const captions = [
+            "Saurrr Cutieee💗💗💗",
+            "🫂🫂🫂🫂🫂",
+            "Mwaaapsss🫣🫣🫣",
+            "Mirror pic in the provincial capitol📸📸📸",
+            "1st photo booth together📷📷📷",
+            "Kissss HEHEHE😘😘😘",
+            "Photo After Mass⛪⛪⛪",
+            "Hanggkuletttttt😁😁😁",
+            "My baby so pretttyyy😍😍😍",
+            "CUTIEEEEEEEE🤩🤩🤩",
+            "Ginabi sa bagasbas moments😜😜😜",
+            "COOOOLLLLLL😎😎😎",
+            "EMO is not dead🤘🤘🤘",
+            "Na parang di galing sa away😝😝😝",
+            "kalimutan naa~~~~~😜😜😜",
+            "BGB!!!!!🌊🌊🌊",
+            "Freshie salubong, eh nag bonuks😋😋😋",
+            "Guess what? Bonuks again😋😋😋",
+            "Day 1 Freshie salubong🙌🙌🙌",
+            "Parehas cutee😉😉😉",
+            "Your 18th Birthday👑👑👑",
+            "Vinzons park🌳🌳🌳",
+            "Cuddleeeee🫂🫂🫂",
+            "Silent Sanctuary concert🎵🎵🎵",
+            "So in love💗💗💗",
+            "Quick Selfie📷📷📷",
+            "My graduation🎓🎓🎓",
+            "BGB after NSTP🌊🌊🌊",
+            "COCOOOOO!!!!🐧🐧🐧",
+            "PAKAKKKKK😘😘😘",
+            "7/11 after NSTP🏪🏪🏪",
+            "Tingin-tingin mo diyan??👀👀👀",
+            "Nasa SM daw, edi puntahan🏢🏢🏢",
+            "Heart heart BGB🫶🫶🫶",
+            "First time sainyo😘😜😁"
+        ];
+
+        function showSlide(index) {
+            if (index >= slides.length) currentIndex = 0;
+            else if (index < 0) currentIndex = slides.length - 1;
+            else currentIndex = index;
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[currentIndex].classList.add('active');
+            dots[currentIndex].classList.add('active');
+            
+
+            document.getElementById('captionText').textContent = captions[currentIndex];
+
+            document.getElementById('currentMemory').textContent = currentIndex + 1;
+        }
+
+        function moveSlide(direction) {
+            showSlide(currentIndex + direction);
+            resetAutoPlay();
+        }
+
+        function currentSlide(index) {
+            showSlide(index);
+            resetAutoPlay();
+        }
+    
+        function autoPlay() {
+            currentIndex++;
+            if (currentIndex >= slides.length) {
+                currentIndex = 0;
+            }
+            showSlide(currentIndex);
+        }
+
+        function resetAutoPlay() {
+            clearInterval(autoPlayInterval);
+            autoPlayInterval = setInterval(autoPlay, 4000);
+        }
+
+        document.getElementById('totalMemories').textContent = slides.length;
+
+        autoPlayInterval = setInterval(autoPlay, 4000);
+
+        function createHeartParticle() {
+            const heartParticles = document.querySelector('.heart-particles');
+            const heart = document.createElement('div');
+            heart.classList.add('heart-particle');
+            
+            const heartEmojis = ['💕', '💖', '💗', '💓', '💝', '💞', '💘', '🩷'];
+            heart.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
+            
+            heart.style.left = Math.random() * 100 + '%';
+            
+            const duration = (Math.random() * 4 + 5);
+            heart.style.animationDuration = duration + 's';
+            
+            const startSize = (Math.random() * 15 + 11); 
+            heart.style.setProperty('--start-size', startSize + 'px');
+        
+            const endSize = (Math.random() * 40 + 31); 
+            heart.style.setProperty('--end-size', endSize + 'px');
+            
+            const baseOpacity = Math.random() * 0.06 + 0.04;
+            heart.style.opacity = baseOpacity;   
+            heartParticles.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, duration * 1000);
+        }
+        
+        setInterval(createHeartParticle, 300); 
+        
+        for (let i = 0; i < 5; i++) {
+            setTimeout(createHeartParticle, i * 200);
+        }
+    </script>
+
+</body>
+</html>

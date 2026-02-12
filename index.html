@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back, Baby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heart-particles"></div>
+    
+    <div class="login-wrapper">
+        <div class="login-container">
+            <div class="profile-circle">
+                <img src="images/FrontImage.jpg" alt="Profile Picture">
+            </div>
+            
+            <h1 class="welcome-title">Happy Valentine's Day, Baby!</h1>
+              
+            <form id="loginForm">
+                <label for="password" class="input-label">Enter Our Special Date</label>
+                <input 
+                    type="text" 
+                    id="password" 
+                    placeholder="MM/DD/YYYY"
+                    autocomplete="off"
+                >
+                <button type="submit" class="login-btn">
+                    ♡ Enter ♡
+                </button>
+            </form>
+            
+            <p class="footer-text">Made with love by your baby 💌</p>
+        </div>
+    </div>
+
+    <script>
+        const CORRECT_PASSWORD = '03/21/2024';
+        
+        const loginForm = document.getElementById('loginForm');
+        const passwordInput = document.getElementById('password');
+        const loginBtn = loginForm.querySelector('.login-btn');
+        const loginContainer = document.querySelector('.login-container');
+        
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const enteredPassword = passwordInput.value.trim();
+            
+            if (enteredPassword === CORRECT_PASSWORD || enteredPassword === CORRECT_PASSWORD_ALT) {
+                loginBtn.classList.add('loading');
+                loginBtn.innerHTML = '♡ Loading... ♡';
+                passwordInput.disabled = true;
+                
+                setTimeout(() => {
+                    loginContainer.classList.add('fade-out');
+                }, 200);
+                
+                setTimeout(() => {
+                    window.location.href = 'homePage.html';
+                }, 800);
+            } else {
+                passwordInput.classList.add('shake');
+                passwordInput.value = '';
+                
+                setTimeout(() => {
+                    passwordInput.classList.remove('shake');
+                }, 500);
+                
+                passwordInput.placeholder = "Try again, Baby! 💔";
+                setTimeout(() => {
+                    passwordInput.placeholder = "MM/DD/YYYY";
+                }, 2000);
+            }
+        });
+        
+        function createHeartParticle() {
+            const heartParticles = document.querySelector('.heart-particles');
+            const heart = document.createElement('div');
+            heart.classList.add('heart-particle');
+            
+            const heartEmojis = ['💕', '💖', '💗', '💓', '💝', '💞', '💘', '🩷'];
+            heart.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
+            
+            heart.style.left = Math.random() * 100 + '%';
+            
+            const duration = (Math.random() * 4 + 5);
+            heart.style.animationDuration = duration + 's';
+            
+            const startSize = (Math.random() * 15 + 11); 
+            heart.style.setProperty('--start-size', startSize + 'px');
+        
+            const endSize = (Math.random() * 40 + 31); 
+            heart.style.setProperty('--end-size', endSize + 'px');
+            
+            const baseOpacity = Math.random() * 0.06 + 0.04;
+            heart.style.opacity = baseOpacity;   
+            heartParticles.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, duration * 1000);
+        }
+        
+        setInterval(createHeartParticle, 300); 
+        
+        for (let i = 0; i < 5; i++) {
+            setTimeout(createHeartParticle, i * 200);
+        }
+    </script>
+</body>
+</html>

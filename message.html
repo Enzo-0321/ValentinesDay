@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <p style="font-family: Tangerine; font-size: 30px;"> 
+            Lorenzo💗Zenjie
+        </p> 
+        
+        <nav>
+            <a href="homePage.html">Home</a>
+            <a href="message.html">Read this, Baby</a>
+            <a href="reveal.html">Things I Love</a>
+            <a href="memories.html">Memories</a>
+        </nav>
+    </header>
+
+    <div class="background-decorations">
+        <img src="images/happy-valentines-day-elements-2014-butterflies-valentines-day-11563615248lleh50jnsm.png" class="deco-heart-1">
+        <img src="images/cute-pastel-pink-hand-drawn-doodle-heart-icon-free-png.webp" class="deco-heart-2">
+        <img src="images/pink-cupid-shooting-hand-drawn-png.webp" class="deco-cupid">
+        <img src="images/line-pattern-pink-heart-flat-design-for-decoration-love-valentine-wedding-card-design-free-png.webp" class="deco-heart-3">
+    </div>
+
+    <div class="greet" style="min-height: calc(100vh - 200px);">
+        <h1>To My One and Only, Baby</h1>
+        
+        <p class="greeting-center">Happy Valentine's Day, BabyLoveKo!</p>
+        
+        <p class="message-paragraph">
+            ILOVEYOUSOMUCHH, BABYY. Sobrang mahal na mahal po kitaaa. Kahit paulit-ulit po, 
+            I just want you to know na sobrang swerte ko po sa iyo, babyy. Sobrang swerte ko po dahil 
+            ikaw po ang girlfriend ko, sobrang swerte ko po dahil andyan ka po palagi para sa'kin sa lahat
+            ng pagkakataon po, babyy. Super super sure po ako sa'yo, baby, super sure pon ako na ikaw na po 
+            ang papakasalan ko, na ikaw na po ang makakasama ko habang buhay. Ipinapangako ko po na palagi ko po
+            ikaw aalagaan at mamahalin, ibibigay ko po sa'yo lahat ng pagmamahal na kaya kong ibigay, babyy.
+            Kayanin po natin lahat ng problema at magsama po tayo hanggang sa dulo ng walang hanggan, babyloveko.
+        </p>
+        
+        <p class="message-paragraph emphasis">
+            SOBRANG MAHAL NA MAHAL KO PO IKAWW, BABYY!
+        </p>
+        
+        <p class="signature-text" style="line-height: 1.0;">
+            Forever yours,<br>Your Forever Baby
+        </p>
+    </div>
+
+    <div class="heart-particles"></div>
+
+    <script>
+        // Heart particles animation
+        function createHeartParticle() {
+            const heartParticles = document.querySelector('.heart-particles');
+            const heart = document.createElement('div');
+            heart.classList.add('heart-particle');
+            
+            const heartEmojis = ['💕', '💖', '💗', '💓', '💝', '💞', '💘', '🩷'];
+            heart.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
+            
+            heart.style.left = Math.random() * 100 + '%';
+            
+            const duration = (Math.random() * 4 + 5);
+            heart.style.animationDuration = duration + 's';
+            
+            // Varied sizes for bokeh effect - increased by 1px
+            const startSize = (Math.random() * 15 + 11); 
+            heart.style.setProperty('--start-size', startSize + 'px');
+        
+            const endSize = (Math.random() * 40 + 31); 
+            heart.style.setProperty('--end-size', endSize + 'px');
+            
+            // Varied opacity for depth
+            const baseOpacity = Math.random() * 0.06 + 0.04;
+            heart.style.opacity = baseOpacity;   
+            heartParticles.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, duration * 1000);
+        }
+        setInterval(createHeartParticle, 300); 
+        
+        for (let i = 0; i < 5; i++) {
+            setTimeout(createHeartParticle, i * 200);
+        }
+    </script>
+
+</body>
+</html>
