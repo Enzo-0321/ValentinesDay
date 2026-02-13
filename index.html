@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Valentine's Day, Baby</title>
+    <title>Welcome Back, Baby</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
@@ -50,7 +50,7 @@
             
             const enteredPassword = passwordInput.value.trim();
             
-            if (enteredPassword === CORRECT_PASSWORD || enteredPassword === CORRECT_PASSWORD_ALT) {
+            if (enteredPassword === CORRECT_PASSWORD) {
                 loginBtn.classList.add('loading');
                 loginBtn.innerHTML = '♡ Loading... ♡';
                 passwordInput.disabled = true;
@@ -112,5 +112,4 @@
         }
     </script>
 </body>
-
 </html>
